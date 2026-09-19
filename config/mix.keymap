@@ -44,7 +44,7 @@
    &trans &kp HOME &kp UP   &kp END    &trans &kp PSCRN                    &trans &trans &trans &trans &trans &trans
    &trans &kp LEFT &kp DOWN &kp RIGHT  &trans &trans                       &trans &trans &trans &trans &trans &trans
    &trans &trans   &trans   &trans     &trans &trans                       &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans         &trans &kp LC(S(V)) &trans                       &trans &trans &trans &trans &trans &trans
+   &trans &trans &trans         &trans &kp LC(LS(V)) &trans                &trans &trans &trans &trans &trans &trans
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
