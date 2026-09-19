@@ -16,10 +16,11 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    glidepoint_listener: glidepoint_listener {
-        compatible = "zmk,input-listener";
-        status = "okay";
-    };
+        glidepoint_listener: glidepoint_listener {
+                compatible = "zmk,input-listener";
+                device = <&glidepoint>;
+                status = "okay";
+};
 };
 
 / {
