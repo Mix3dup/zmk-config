@@ -40,11 +40,11 @@
                 lower_layer {
 
                         bindings = <
-   &trans &trans   &trans   &trans     &trans &trans                       &trans &trans &trans &trans &trans &trans
-   &trans &kp HOME &kp UP   &kp END    &trans &kp PSCRN                    &trans &trans &trans &trans &trans &trans
-   &trans &kp LEFT &kp DOWN &kp RIGHT  &trans &trans                       &trans &trans &trans &trans &trans &trans
-   &trans &trans   &trans   &trans     &trans &trans                       &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans         &trans &kp LC(LS(V)) &trans                &trans &trans &trans &trans &trans &trans
+   &kp GRAVE &trans       &trans   &trans        &trans        &trans                       &trans &trans &trans &trans &trans &trans
+   &trans    &kp HOME     &kp UP   &kp END       &kp PG_UP     &kp PSCRN                    &trans &trans &trans &trans &trans &trans
+   &trans    &kp LEFT     &kp DOWN &kp RIGHT     &kp PG_DN     &trans                       &trans &trans &trans &trans &trans &trans
+   &trans    &kp LC(LEFT) &trans   &kp LC(RIGHT) &kp LC(LS(V)) &trans                       &trans &trans &trans &trans &trans &trans
+   &trans &trans &trans         &trans &trans &trans                                  &trans &trans &trans &trans &trans &trans
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
@@ -52,9 +52,9 @@
                 raise_layer {
 
                        bindings = <
-   &trans &trans &trans &trans &trans &trans                       &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans                       &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans                       &trans &trans &trans &trans &trans &trans
+   &trans &trans &trans &trans &trans &trans                       &trans &trans &trans &kp LBRC &kp RBRC &trans
+   &trans &trans &trans &trans &trans &trans                       &trans &trans &trans &kp LBKT &kp RBKT &trans
+   &trans &trans &trans &trans &trans &trans                       &trans &trans &trans &trans &trans &kp NUHS
    &trans &trans &trans &trans &trans &trans                       &trans &trans &trans &trans &trans &trans
    &trans &trans &trans &trans &trans &trans                       &trans &trans &trans &trans &trans &trans
                         >;
